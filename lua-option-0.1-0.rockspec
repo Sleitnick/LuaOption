@@ -14,7 +14,7 @@ dependencies = {
 	"lua >= 5.1"
 }
 build = {
-	type = "module",
+	type = "builtin",
 	modules = {
 		option = "src/option.lua"
 	}
