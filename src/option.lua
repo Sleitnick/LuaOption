@@ -64,7 +64,7 @@ local CLASSNAME = "Option"
 local Option = {}
 Option.__index = Option
 
-Option.Version = "0.1.0"
+Option.Version = "0.1-0"
 
 
 function Option._new(value)
