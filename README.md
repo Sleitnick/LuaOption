@@ -1,6 +1,6 @@
 # Lua Option
 
-Options are useful for handling `nil`-value cases. Any time that an operation might return `nil`, it is useful to instead return an Option, which will indicate that the value might be `nil`, and should be explicitly checked before using the value. This will help prevent common bugs cause by `nil` values that can fail silently.
+Options are useful for handling `nil`-value cases. Any time that an operation might return `nil`, it is useful to instead return an Option, which will indicate that the value might be `nil`, and should be explicitly checked before using the value. This will help prevent common bugs caused by `nil` values that can fail silently.
 
 Inspired by Rust's [Option](https://doc.rust-lang.org/std/option/) module.
 
