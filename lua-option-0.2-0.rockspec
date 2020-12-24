@@ -1,8 +1,8 @@
 package = "lua-option"
-version = "0.1-0"
+version = "0.2-0"
 source = {
 	url = "git://github.com/Sleitnick/LuaOption",
-	tag = "v0.1-0"
+	tag = "v0.2.0"
 }
 description = {
 	summary = "Lua Option implementation",
