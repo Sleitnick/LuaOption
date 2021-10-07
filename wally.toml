@@ -1,5 +1,5 @@
 [package]
-name = "Sleitnick/LuaOption"
+name = "sleitnick/option"
 description = "Represent optional values in Lua"
 version = "1.0.0"
 license = "MIT"
