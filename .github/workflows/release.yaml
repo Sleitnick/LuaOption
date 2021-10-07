@@ -38,4 +38,4 @@ jobs:
         run: |
           mkdir -p ~/.wally
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
-          wally publish --verbose
+          wally publish
