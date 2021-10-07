@@ -1,0 +1,10 @@
+[package]
+name = "Sleitnick/LuaOption"
+description = "Represent optional values in Lua"
+version = "1.0.0"
+license = "MIT"
+authors = ["Stephen Leitnick"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
