@@ -32,5 +32,5 @@ jobs:
             Option.zip
       - name: Publish release to Wally
         run: |
-          wally login ${secrets.WALLY_API_TOKEN}
+          wally login ${{ secrets.WALLY_API_TOKEN }}
           wally publish
