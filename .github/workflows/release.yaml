@@ -35,5 +35,6 @@ jobs:
         env:
           WALLY_AUTH: ${{ secrets.WALLY_AUTH }}
         run: |
+          mkdir -p ~/.wally
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
           wally publish
