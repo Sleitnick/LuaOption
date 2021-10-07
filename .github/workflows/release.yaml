@@ -19,6 +19,7 @@ jobs:
           token: ${{ SECRETS.GITHUB_TOKEN }}
       - name: Build project
         run: |
+          rm -rf .foreman-install
           wally package --output Option.zip
       - name: Get version
         id: get_version
