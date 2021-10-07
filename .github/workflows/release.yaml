@@ -33,6 +33,7 @@ jobs:
       - name: Publish release to Wally
         shell: bash
         env:
-          WALLY_API_TOKEN: ${{ secrets.WALLY_API_TOKEN }}
+          WALLY_AUTH: ${{ secrets.WALLY_AUTH }}
         run: |
+          echo "$WALLY_AUTH" > ~/.wally/auth.toml
           wally publish
