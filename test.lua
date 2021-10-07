@@ -5,7 +5,7 @@ local Test = {_tests = {}}
 
 function Test:Add(name, func, expectFail)
 	assert(type(func) == "function", "Expected function for test")
-	if (type(name) ~= "string") then
+	if type(name) ~= "string" then
 		name = "Test"
 	end
 	table.insert(self._tests, {Name = name, Func = func; ExpectFail = expectFail})
@@ -18,14 +18,14 @@ function Test:Run()
 		local success, val, msg = pcall(function()
 			return test.Func()
 		end)
-		if (test.ExpectFail) then
+		if test.ExpectFail then
 			success = (not success)
-		elseif (success) then
+		elseif success then
 			success = val
 			val = msg or ""
 		end
 		print(("[%i/%i] %s: %s"):format(i, n, test.Name, success and "SUCCESS" .. (test.ExpectFail and " (" .. tostring(val) .. ")" or "") or "FAIL (" .. tostring(val) .. ")"))
-		if (success) then
+		if success then
 			succeeded = (succeeded + 1)
 		end
 	end
