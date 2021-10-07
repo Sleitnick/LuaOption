@@ -35,5 +35,4 @@ jobs:
         env:
           WALLY_API_TOKEN: ${{ secrets.WALLY_API_TOKEN }}
         run: |
-          wally login "$WALLY_API_TOKEN"
           wally publish
